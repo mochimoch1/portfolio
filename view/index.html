@@ -37,8 +37,6 @@
 :root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
 </style>
 <!-- ここから -->
-<link rel="stylesheet" id="theme-style-css" href="https://shin-design.jp/wp/wp-content/themes/shindesign/assets/app.css?ver=6.7.1" type="text/css" media="all">
-<link rel="stylesheet" id="editor-style-css" href="https://shin-design.jp/wp/wp-content/themes/shindesign/editor-style.css?ver=6.7.1" type="text/css" media="all">
 <!-- ここまで外部のstylesheet -->
 <script src="https://use.typekit.net/biv1syn.js" async=""></script><script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js?ver=6.7.1" id="jquery-js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js?ver=6.7.1" id="script-slick-js"></script>
@@ -110,12 +108,12 @@
 	<div class="l-page">
 		<header class="l-header p-header js-header">
 			<div class="p-header-inner">
-                <div class="top_header">
+                <div class="left">
 				<a href="https://shin-design.jp/" class="p-header__logo">
-					<img src="./portfolioicon.png" alt="">
+					<img src="./portfolioicon.png" alt="" class="logo_icon">
 				</a>
-            </div> 
                 <h2 class="header_txt">Takehara Koki</h2>
+                </div>
 				<!-- /p-header__navi -->
 
 				<!-- ドロワーメニュー -->
@@ -126,11 +124,11 @@
 								<a href="https://shin-design.jp/" class="p-header__menu-link">ホーム</a>
 							</li>
 							<li class="p-header__menu-item">
-								<a href="https://shin-design.jp/about/" class="p-header__menu-link">私たちについて</a>
+								<a href="https://shin-design.jp/about/" class="p-header__menu-link">自己紹介</a>
 							</li>
 							<li class="p-header__menu-item has-child">
-								<a href="" class="p-header__menu-link">サービス内容</a>
-								<ul class="p-header__menu-sublist">
+								<a href="" class="p-header__menu-link">業務実績</a>
+								<!-- <ul class="p-header__menu-sublist">
 									<li class="p-header__menu-sublist-item">
 										<a href="https://shin-design.jp/service/" class="p-header__menu-sublist-link">サービス内容</a>
 									</li>
@@ -149,58 +147,27 @@
 
 
 
-								</ul><!-- /p-header__menu-sublist -->
+								</ul>/p-header__menu-sublist -->
 
-							</li>
-
-							<li class="p-header__menu-item">
-								<a href="https://shin-design.jp/plan/" class="p-header__menu-link">プランと料金</a>
-							</li>
-							<li class="p-header__menu-item">
-								<a href="https://shin-design.jp/works/" class="p-header__menu-link">制作実績</a>
-							</li>
-							<li class="p-header__menu-item">
-								<a href="https://shin-design.jp/faq/" class="p-header__menu-link">よくある質問</a>
-							</li>
-							<li class="p-header__menu-item">
-								<a href="https://shin-design.jp/contact/" class="p-header__menu-link --mail">無料相談する</a>
 							</li>
 							<li class="p-header__menu-item --news">
 								<a href="https://shin-design.jp/news/" class="p-header__menu-link">お知らせ</a>
 							</li>
+                            <li class="p-header__menu-item --news">
+                                <a a href="" class="p-header__menu-link">ー<br>ー<br>ー</a>
+                            </li>
 
 
-							<ul class="p-header__cta">
+							<!-- <ul class="p-header__cta">
 								<li>
 									<a href="https://shin-design.jp/contact/" class="p-header__cta-btn c-cta-btn --mail">無料相談する</a>
 								</li>
 								<li>
 									<a href="https://lin.ee/uEtpUqx" class="p-header__cta-btn c-cta-btn --line">LINEで相談する</a>
 								</li>
-							</ul><!-- /p-header__cta -->
+							</ul>/p-header__cta -->
 
-							<ul class="p-header__sns">
-								<li>
-									<a href="https://x.com/shindesign_tw" class="p-header__sns-btn --x" target="_blank" rel="noopener noreferrer">
-										<img src="https://shin-design.jp/wp/wp-content/themes/shindesign/assets/images/common/icon_x_black.svg" alt="">
-									</a>
-								</li>
-								<li>
-									<a href="https://www.facebook.com/web.shindesign/" class="p-header__sns-btn --fb" target="_blank" rel="noopener noreferrer">
-										<img src="https://shin-design.jp/wp/wp-content/themes/shindesign/assets/images/common/icon_fb_black.svg" alt="">
-									</a>
-								</li>
-								<li>
-									<a href="https://www.instagram.com/shindesign7/" class="p-header__sns-btn --insta" target="_blank" rel="noopener noreferrer">
-										<img src="https://shin-design.jp/wp/wp-content/themes/shindesign/assets/images/common/icon_insta_black.svg" alt="">
-									</a>
-								</li>
-								<li>
-									<a href="https://lin.ee/uEtpUqx" class="p-header__sns-btn --line" target="_blank" rel="noopener noreferrer">
-										<img src="https://shin-design.jp/wp/wp-content/themes/shindesign/assets/images/common/icon_line_black.svg" alt="">
-									</a>
-								</li>
-							</ul><!-- /p-header__sns -->
+							
 						</ul>
 					</nav>
 
@@ -225,7 +192,9 @@
 
 		</header>
 		<!-- /header -->
+<div class="yohaku"></div>
 <main class="l-main">
+    
 
 	<!-- wp:html -->
 <section class="p-top__mv c-bgcolor">

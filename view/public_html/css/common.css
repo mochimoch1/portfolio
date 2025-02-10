@@ -1,13 +1,99 @@
+header {
+    background-color: #333; /* 背景色 */
+    color: white; /* テキスト色 */
+    padding: 10px 20px; /* 内側の余白 */
+    position: fixed; /* 固定位置にする */
+    top: 0; /* 上部に配置 */
+    left: 0; /* 左端に配置 */
+    width: 100%; /* 幅100% */
+    z-index: 1000; /* 他の要素の上に表示 */
+    background-color: #e8d07f;
+    display:flex;
+}
+a{
+    color: inherit; /* 親要素の色を継承する（例：白色） */
+    text-decoration: none; /* アンダーラインを消す */
+}
+li{
+    list-style-type: none; /* ドットを消す */
+}
+
+
+
+.left{
+    display:flex;
+    align-items:center;
+    height:100px;
+}
+.top_header{
+    display:flex;
+}
+.logo_icon{
+    width:250px;
+}
 .p-header-inner{
-    display :flex;
+    display :block;
 }
 .header_txt{
     font-family: 'Noto Sans', sans-serif;
+    width:50px;
     font-weight: 700;
+    margin-right:100px;
 }
 .p-header__logo{
     transform: scale(0.6); /* 画像を50%に縮小 */
 }
-.p-top__about-wrap{
-    background-color: #e8d07f
+.p-header__menu-wrapper{
+    text-align:right;
+    margin:0 0 0 700px;
+}
+.p-header-inner {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    transition: .2s;
+}
+.p-header__menu{
+    flex-direction: column;
+}
+.p-header__menu-list {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    font-size:small;
+    margin-right:15px
+}
+.p-header__menu-link {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 150%;
+    height: 100%;
+    text-align: center;
+    color: inherit;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 40px;
+}
+.p-header__menu-item{
+    margin:0 50px;
+}
+
+.yohaku{
+    margin:120px 0 0 0;
+}
+
+.inner{
+    display:flex;
+}
+.p-top__mv-main{
+    margin:300px 0 0 200px;
+    display: flex;
+}
+.p-top__mv-read{
+    padding:0 100px 0 100px;
+    width:300px;
+}
+.p-top__mv-slide{
+    margin:0 0 0 0;
 }
