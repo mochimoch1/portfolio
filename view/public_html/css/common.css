@@ -1,0 +1,13 @@
+.p-header-inner{
+    display :flex;
+}
+.header_txt{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+}
+.p-header__logo{
+    transform: scale(0.6); /* 画像を50%に縮小 */
+}
+.p-top__about-wrap{
+    background-color: #e8d07f
+}
