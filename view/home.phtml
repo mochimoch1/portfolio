@@ -2,135 +2,129 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>竹原 洸希の自己紹介</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/top.css">
+  <title>Portfolio | 竹原</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="/common.css">
 </head>
 <body>
   <header>
     <div class="container">
-      <img src="https://randomuser.me/api/portraits/men/75.jpg" class="profile-img" alt="田中太郎の顔写真">
-      <h1>田中 太郎</h1>
-      <p class="lead">Webエンジニア / フロントエンド開発者 / ブロガー</p>
-      <ul class="sns-links">
-        <li><a href="https://twitter.com/yourhandle" target="_blank">Twitter</a></li>
-        <li><a href="https://github.com/yourhandle" target="_blank">GitHub</a></li>
-        <li><a href="https://note.com/yourhandle" target="_blank">Note</a></li>
-      </ul>
+      <div class="header-profile">
+        <img src="https://randomuser.me/api/portraits/men/64.jpg" class="profile-img" alt="鈴木一郎">
+        <div>
+          <h1>鈴木 一郎</h1>
+          <p class="catchcopy">Front-End Developer / UI Designer</p>
+          <ul class="sns-links">
+            <li><a href="#" target="_blank">Twitter</a></li>
+            <li><a href="#" target="_blank">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">ABOUT</a>
+        <a href="#works">WORKS</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
     </div>
   </header>
-  <nav>
-    <ul>
-      <li><a href="#about">自己紹介</a></li>
-      <li><a href="#skill">スキル</a></li>
-      <li><a href="#career">経歴</a></li>
-      <li><a href="#portfolio">ポートフォリオ</a></li>
-      <li><a href="#contact">お問い合わせ</a></li>
-    </ul>
-  </nav>
   <main>
-    <section id="about" class="container">
-      <h2>自己紹介</h2>
-      <p>
-        こんにちは、田中太郎です。1990年生まれ、東京都在住のWebエンジニアです。<br>
-        大学卒業後、SIerにてシステム開発を経験したのち、スタートアップを経て現在はフリーランスとして活動中。<br>
-        主にフロントエンド開発（React、Vue.js）、UI/UX設計、Webサービスの立ち上げに携わってきました。<br>
-        趣味は登山とカメラ、最近はAI技術やDockerにも注目しています。<br>
-      </p>
+    <section id="about" class="section fade">
+      <div class="container">
+        <h2>ABOUT</h2>
+        <p>
+          1994年生まれ、東京都出身。Web制作会社でのフロントエンド開発を経て、2022年よりフリーランスエンジニアへ。<br>
+          JavaScript、CSS、UI設計などが得意で、ReactやVueによるSPA開発・レスポンシブデザイン対応を多く経験しています。<br>
+          趣味は写真撮影とカフェ巡りです。
+        </p>
+      </div>
     </section>
-
-    <section id="skill" class="container">
-      <h2>スキルセット</h2>
-      <div class="skills">
-        <div>
-          <h3>プログラミング</h3>
-          <ul>
-            <li>JavaScript (ES6+)</li>
-            <li>TypeScript</li>
-            <li>Python (Web & Data)</li>
-            <li>PHP / Laravel</li>
-          </ul>
-        </div>
-        <div>
-          <h3>フレームワーク・ライブラリ</h3>
-          <ul>
-            <li>React / Next.js</li>
-            <li>Vue.js</li>
-            <li>Node.js / Express</li>
-            <li>Tailwind CSS, Sass</li>
-          </ul>
-        </div>
-        <div>
-          <h3>インフラ・その他</h3>
-          <ul>
-            <li>Docker / AWS (EC2, S3, Amplify)</li>
-            <li>Git / GitHub Actions</li>
-            <li>Figma / Adobe XD</li>
-          </ul>
+    <section id="works" class="section fade">
+      <div class="container">
+        <h2>WORKS</h2>
+        <div class="carousel-wrap">
+          <button class="carousel-btn left" aria-label="前へ">&#8249;</button>
+          <div class="carousel">
+            <div class="work-card">
+              <img src="https://picsum.photos/id/1011/400/250" alt="work1">
+              <h3>料理写真ギャラリー</h3>
+              <p>HTML+CSS+JSのみで作成したモダンな画像ギャラリーサイト。スクロールアニメーション/カルーセル対応。</p>
+              <a href="#">VIEW SITE</a>
+            </div>
+            <div class="work-card">
+              <img src="https://picsum.photos/id/1015/400/250" alt="work2">
+              <h3>TO DOアプリ</h3>
+              <p>ローカルストレージ対応、ドラッグ&ドロップ操作つきのタスク管理アプリ。</p>
+              <a href="#">VIEW SITE</a>
+            </div>
+            <div class="work-card">
+              <img src="https://picsum.photos/id/1025/400/250" alt="work3">
+              <h3>カフェブログ</h3>
+              <p>CSS3によるパララックス・フェード、執筆者プロフィールページも作成。</p>
+              <a href="#">VIEW SITE</a>
+            </div>
+            <div class="work-card">
+              <img src="https://picsum.photos/id/1021/400/250" alt="work4">
+              <h3>ポートフォリオ（このサイト）</h3>
+              <p>本ページはバニラJSによるカルーセル・アニメーション等を使用し制作しています。</p>
+              <a href="#">VIEW SITE</a>
+            </div>
+          </div>
+          <button class="carousel-btn right" aria-label="次へ">&#8250;</button>
         </div>
       </div>
     </section>
-
-    <section id="career" class="container">
-      <h2>経歴</h2>
-      <ul class="career-list">
-        <li>
-          <span class="year">2013-2016</span>
-          <span class="job-title">株式会社システム開発</span>
-          <span class="job-desc">大手通信会社向け業務アプリ開発（Java/PHP）</span>
-        </li>
-        <li>
-          <span class="year">2017-2020</span>
-          <span class="job-title">スタートアップ株式会社</span>
-          <span class="job-desc">動画配信サービスのフロント開発（Vue/React）、リードエンジニア</span>
-        </li>
-        <li>
-          <span class="year">2021～</span>
-          <span class="job-title">フリーランス</span>
-          <span class="job-desc">複数のWebサービス新規立ち上げや受託開発</span>
-        </li>
-      </ul>
-    </section>
-
-    <section id="portfolio" class="container">
-      <h2>ポートフォリオ</h2>
-      <div class="portfolio-list">
-        <div class="portfolio-item">
-          <img src="https://picsum.photos/400/220?random=1" alt="作品1" />
-          <h3>タスク管理アプリ「Tasky」</h3>
-          <p>React + Firebaseで作成したタスク管理Webアプリ。ドラッグ＆ドロップ機能、スマホ対応。</p>
-          <a href="https://example.com/tasky" target="_blank">サイトを見る</a>
-        </div>
-        <div class="portfolio-item">
-          <img src="https://picsum.photos/400/220?random=2" alt="作品2" />
-          <h3>ポートフォリオサイト</h3>
-          <p>Next.jsとVercelでホスティングした自分用ポートフォリオ。</p>
-          <a href="https://example.com/portfolio" target="_blank">サイトを見る</a>
-        </div>
-        <div class="portfolio-item">
-          <img src="https://picsum.photos/400/220?random=3" alt="作品3" />
-          <h3>ブログ「CodeLife」</h3>
-          <p>技術記事を中心としたブログ、CMSにはmicroCMSを利用。</p>
-          <a href="https://example.com/blog" target="_blank">サイトを見る</a>
+    <section id="skills" class="section fade">
+      <div class="container">
+        <h2>SKILLS</h2>
+        <div class="skills-grid">
+          <div>
+            <h4>Frontend</h4>
+            <ul>
+              <li>HTML& CSS (Sass)</li>
+              <li>JavaScript (ES2020+)</li>
+              <li>TypeScript</li>
+              <li>React / Vue</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Design</h4>
+            <ul>
+              <li>UI/UX設計</li>
+              <li>Adobe XD / Figma</li>
+              <li>レスポンシブ&モバイルファースト</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Other</h4>
+            <ul>
+              <li>Adobe Photoshop</li>
+              <li>WordPress</li>
+              <li>Git / GitHub</li>
+              <li>Vercelデプロイ</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
-
-    <section id="contact" class="container">
-      <h2>お問い合わせ</h2>
-      <form action="mailto:test@example.com" method="POST" enctype="text/plain">
-        <label for="name">お名前：</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">メールアドレス：</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">メッセージ：</label>
-        <textarea id="message" name="message" rows="6" required></textarea>
-        <button type="submit">送信</button>
-      </form>
+    <section id="contact" class="section fade">
+      <div class="container">
+        <h2>CONTACT</h2>
+        <form id="contactForm" autocomplete="off">
+          <input type="text" name="name" placeholder="お名前" required>
+          <input type="email" name="email" placeholder="メール" required>
+          <textarea name="message" rows="4" placeholder="お問い合わせ内容" required></textarea>
+          <button type="submit">送信する</button>
+          <p class="form-message"></p>
+        </form>
+      </div>
     </section>
   </main>
   <footer>
-    <p>&copy; 2024 田中太郎</p>
+    <div class="container">
+      <small>&copy; 2024 Ichiro Suzuki</small>
+    </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
