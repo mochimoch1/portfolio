@@ -1,3 +1,5 @@
+<?php
+require_once __DIR__ . '/controllers/HomeController.php';
 
-<link rel="stylesheet" href="/common.css"> <!-- view ディレクトリ内 -->
-<link rel="stylesheet" href="/css/top.css"> <!-- view/public_html 内 -->
+$controller = new HomeController();
+echo $controller->index();
