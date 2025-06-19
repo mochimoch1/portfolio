@@ -1,30 +1,136 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>自己紹介</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>田中 太郎の自己紹介</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <header>
     <div class="container">
-        <header>
-            <h1>こんにちは！私の名前は〇〇です。</h1>
-        </header>
-
-        <section class="profile">
-            <img src="path_to_your_profile_image.jpg" alt="私のプロフィール画像" class="profile-img">
-            <p>私は〇〇ということをしています。興味を持っている分野は△△です。</p>
-            <p>趣味は◇◇で、特に◎◎の活動が好きです。</p>
-        </section>
-
-        <footer>
-            <p>私のSNS: 
-                <a href="#">Twitter</a> | 
-                <a href="#">GitHub</a> | 
-                <a href="#">LinkedIn</a>
-            </p>
-        </footer>
+      <img src="https://randomuser.me/api/portraits/men/75.jpg" class="profile-img" alt="田中太郎の顔写真">
+      <h1>田中 太郎</h1>
+      <p class="lead">Webエンジニア / フロントエンド開発者 / ブロガー</p>
+      <ul class="sns-links">
+        <li><a href="https://twitter.com/yourhandle" target="_blank">Twitter</a></li>
+        <li><a href="https://github.com/yourhandle" target="_blank">GitHub</a></li>
+        <li><a href="https://note.com/yourhandle" target="_blank">Note</a></li>
+      </ul>
     </div>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#about">自己紹介</a></li>
+      <li><a href="#skill">スキル</a></li>
+      <li><a href="#career">経歴</a></li>
+      <li><a href="#portfolio">ポートフォリオ</a></li>
+      <li><a href="#contact">お問い合わせ</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="about" class="container">
+      <h2>自己紹介</h2>
+      <p>
+        こんにちは、田中太郎です。1990年生まれ、東京都在住のWebエンジニアです。<br>
+        大学卒業後、SIerにてシステム開発を経験したのち、スタートアップを経て現在はフリーランスとして活動中。<br>
+        主にフロントエンド開発（React、Vue.js）、UI/UX設計、Webサービスの立ち上げに携わってきました。<br>
+        趣味は登山とカメラ、最近はAI技術やDockerにも注目しています。<br>
+      </p>
+    </section>
+
+    <section id="skill" class="container">
+      <h2>スキルセット</h2>
+      <div class="skills">
+        <div>
+          <h3>プログラミング</h3>
+          <ul>
+            <li>JavaScript (ES6+)</li>
+            <li>TypeScript</li>
+            <li>Python (Web & Data)</li>
+            <li>PHP / Laravel</li>
+          </ul>
+        </div>
+        <div>
+          <h3>フレームワーク・ライブラリ</h3>
+          <ul>
+            <li>React / Next.js</li>
+            <li>Vue.js</li>
+            <li>Node.js / Express</li>
+            <li>Tailwind CSS, Sass</li>
+          </ul>
+        </div>
+        <div>
+          <h3>インフラ・その他</h3>
+          <ul>
+            <li>Docker / AWS (EC2, S3, Amplify)</li>
+            <li>Git / GitHub Actions</li>
+            <li>Figma / Adobe XD</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="career" class="container">
+      <h2>経歴</h2>
+      <ul class="career-list">
+        <li>
+          <span class="year">2013-2016</span>
+          <span class="job-title">株式会社システム開発</span>
+          <span class="job-desc">大手通信会社向け業務アプリ開発（Java/PHP）</span>
+        </li>
+        <li>
+          <span class="year">2017-2020</span>
+          <span class="job-title">スタートアップ株式会社</span>
+          <span class="job-desc">動画配信サービスのフロント開発（Vue/React）、リードエンジニア</span>
+        </li>
+        <li>
+          <span class="year">2021～</span>
+          <span class="job-title">フリーランス</span>
+          <span class="job-desc">複数のWebサービス新規立ち上げや受託開発</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="portfolio" class="container">
+      <h2>ポートフォリオ</h2>
+      <div class="portfolio-list">
+        <div class="portfolio-item">
+          <img src="https://picsum.photos/400/220?random=1" alt="作品1" />
+          <h3>タスク管理アプリ「Tasky」</h3>
+          <p>React + Firebaseで作成したタスク管理Webアプリ。ドラッグ＆ドロップ機能、スマホ対応。</p>
+          <a href="https://example.com/tasky" target="_blank">サイトを見る</a>
+        </div>
+        <div class="portfolio-item">
+          <img src="https://picsum.photos/400/220?random=2" alt="作品2" />
+          <h3>ポートフォリオサイト</h3>
+          <p>Next.jsとVercelでホスティングした自分用ポートフォリオ。</p>
+          <a href="https://example.com/portfolio" target="_blank">サイトを見る</a>
+        </div>
+        <div class="portfolio-item">
+          <img src="https://picsum.photos/400/220?random=3" alt="作品3" />
+          <h3>ブログ「CodeLife」</h3>
+          <p>技術記事を中心としたブログ、CMSにはmicroCMSを利用。</p>
+          <a href="https://example.com/blog" target="_blank">サイトを見る</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container">
+      <h2>お問い合わせ</h2>
+      <form action="mailto:test@example.com" method="POST" enctype="text/plain">
+        <label for="name">お名前：</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">メールアドレス：</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">メッセージ：</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+        <button type="submit">送信</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 田中太郎</p>
+  </footer>
 </body>
 </html>
