@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yuki Portfolio</title>
+    <meta
+      name="description"
+      content="Web制作・UIデザイン・フロントエンド開発を行うYukiのポートフォリオサイト"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="bg-decoration"></div>
+    <header class="site-header">
+      <a class="logo" href="#">Yuki.</a>
+      <nav class="site-nav">
+        <a href="#works">Works</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
+    <main>
+      <section class="hero">
+        <p class="tag">Frontend Developer / UI Designer</p>
+        <h1>見る人の心に残る、<br />ミニマルで洗練された体験を。</h1>
+        <p class="lead">
+          Webサイト制作からUI設計まで、伝わるデザインと心地よい操作感を大切にしています。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#works">制作実績を見る</a>
+          <a class="btn btn-secondary" href="#contact">相談する</a>
+        </div>
+      </section>
+
+      <section id="works" class="section">
+        <h2>Works</h2>
+        <div class="cards">
+          <article class="card">
+            <p class="card-label">Web Design</p>
+            <h3>サロン予約サイト</h3>
+            <p>予約導線を改善し、CV率を1.8倍に向上。</p>
+          </article>
+          <article class="card">
+            <p class="card-label">Brand Site</p>
+            <h3>コーヒーブランドLP</h3>
+            <p>ブランドの世界観を伝えるアニメーション設計。</p>
+          </article>
+          <article class="card">
+            <p class="card-label">UI/UX</p>
+            <h3>習慣化アプリ</h3>
+            <p>継続率を意識した情報設計とUI改善を担当。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <h2>About</h2>
+        <p>
+          東京を拠点に活動するフロントエンド開発者。デザインと実装の間をつなぎ、使いやすく美しいWeb体験をつくることが得意です。
+        </p>
+      </section>
+
+      <section id="contact" class="section contact">
+        <h2>Contact</h2>
+        <p>
+          お仕事のご相談は
+          <a href="mailto:hello@example.com">hello@example.com</a>
+          までお気軽にどうぞ。
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
